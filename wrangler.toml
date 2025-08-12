@@ -1,0 +1,11 @@
+name = "render-service-manager"
+compatibility_date = "2025-08-01"
+workers_dev = true
+[vars]
+ADMIN_USERNAME = "admin"
+ADMIN_PASSWORD = "your-strong-password"
+RENDER_ACCOUNTS = '[{"id": "account1", "name": "Account 1", "apiKey": "rnd_xxx"}]'
+SESSION_SECRET = "your-random-secret"
+kv_namespaces = [
+  { binding = "RENDER_KV", id = "你的KV_ID" }
+]
